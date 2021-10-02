@@ -15,10 +15,23 @@ html {
   font-family: var(--sans-serif);
 }
 
+h1::selection {
+  background-color: var(--dark-blue);
+  color: var(--beige);
+}
+
+button::selection {
+  background-color: transparent;
+}
+
+p::selection {
+  color: var(--dark-blue);
+  background-color: var(--beige);
+}
+
 /*Introduction*/
 
 .loading {
-  background-image: url("loading.png");
   position: fixed;
   top: 0;
   bottom: 0;
@@ -28,6 +41,42 @@ html {
   background-size: cover;
   background-position: bottom;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+  z-index: 500;
+}
+
+.activate-sound-div {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white 0.5rem solid;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.activate-sound-div:hover {
+  padding: 1rem;
+}
+
+.loading p {
+  padding-top: 3rem;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--sans-serif);
+  width: 50vw;
+}
+
+.activate-sound-div img {
+  width: 50%;
+  height: 50%;
+  filter: invert(100%);
 }
 
 .intro-video {
