@@ -1,7 +1,7 @@
 const d = document
 
 export default function loading(selector, selectorVideo) {
-  d.addEventListener('click', musicPlay);
+  d.querySelector(".activate-sound-div img").addEventListener('click', musicPlay);
 function musicPlay() {
     d.querySelector("audio").play();
     d.removeEventListener('click', musicPlay);
