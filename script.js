@@ -1,6 +1,5 @@
 import loading from "./loading.js";
 
-const d = document,
-audio = d.querySelector("audio")
+const d = document
 
 loading(".loading", ".intro-video")
