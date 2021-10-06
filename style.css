@@ -57,13 +57,14 @@ p::selection {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: white 0.5rem solid;
+  border: var(--beige) 0.5rem solid;
   transition: 1s;
   cursor: pointer;
 }
 
 .activate-sound-div:hover {
   padding: 1rem;
+  background-color: var(--beige);
 }
 
 .loading p {
@@ -78,6 +79,11 @@ p::selection {
   width: 50%;
   height: 50%;
   filter: invert(100%);
+  transition: 1s;
+}
+
+.activate-sound-div-img-hover {
+  filter: invert(0%) !important;
 }
 
 .intro-video {
