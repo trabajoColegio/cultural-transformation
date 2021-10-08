@@ -11,8 +11,6 @@ export default function loading(selector, selectorVideo) {
     $soundImg.classList.remove("activate-sound-div-img-hover")
   })
   $btn.addEventListener('click', e => {
-    $song.play();
-
   const $loadingScreen = d.querySelector(selector),
   $introVideo = d.querySelector(selectorVideo),
   $introduction = d.querySelector(".introduction")
@@ -24,9 +22,9 @@ export default function loading(selector, selectorVideo) {
     $introVideo.play();
     setTimeout(() => {
       $loadingScreen.classList.add("none")
-      $song.pause();
       $introduction.classList.remove("disappear")
     }, 500);
   }, 1000);
   });
+  $btn.addEventListener("click", e => $song.play())
 }
