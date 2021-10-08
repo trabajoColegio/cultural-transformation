@@ -11,13 +11,14 @@ export default function activateVideo(video, change, secondVideo, change2, third
   $change = d.querySelector(change),
   $change2 = d.querySelector(change2),
   $change3 = d.querySelector(change3),
-  $lastSong = d.querySelector(".lastSong")
+  $lastSong = d.querySelector(".lastSong"),
+  $firstSong = d.querySelector(".song")
 
   $videoBtn.addEventListener("click", e => {
     $introduction.classList.add("disappear")
     $introVideo.classList.add("disappear")
     setTimeout(() => {
-      d.querySelector(".song").pause();
+      $firstSong.pause();
       $introduction.classList.add("none")
       $introVideo.classList.add("none")
       $videoDiv.classList.remove("none")
