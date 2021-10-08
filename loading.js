@@ -2,7 +2,8 @@ const d = document
 
 export default function loading(selector, selectorVideo) {
   const $btn = d.querySelector(".activate-sound-div"),
-  $soundImg = d.querySelector(".activate-sound-div img")
+  $soundImg = d.querySelector(".activate-sound-div img"),
+  $song = d.querySelector(".song")
   $btn.addEventListener("mouseover", e => {
     $soundImg.classList.add("activate-sound-div-img-hover")
   })
@@ -10,8 +11,7 @@ export default function loading(selector, selectorVideo) {
     $soundImg.classList.remove("activate-sound-div-img-hover")
   })
   $btn.addEventListener('click', e => {
-    d.querySelector(".song").play();
-    d.removeEventListener('click', musicPlay);
+    $song.play();
 
   const $loadingScreen = d.querySelector(selector),
   $introVideo = d.querySelector(selectorVideo),
