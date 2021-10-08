@@ -11,7 +11,7 @@ export default function activateVideo(video, change, secondVideo, change2, third
   $change = d.querySelector(change),
   $change2 = d.querySelector(change2),
   $change3 = d.querySelector(change3),
-  $lastSong = d.querySelector(".lastSong"),
+  $lastSong = d.querySelector(".lastSong")
 
   $videoBtn.addEventListener("click", e => {
     $introduction.classList.add("disappear")
