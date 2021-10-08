@@ -11,7 +11,7 @@ export default function loading(selector, selectorVideo) {
   })
   $btn.addEventListener('click', musicPlay);
 function musicPlay() {
-    d.querySelector("audio").play();
+    d.querySelector(".song").play();
     d.removeEventListener('click', musicPlay);
 
   const $loadingScreen = d.querySelector(selector),
