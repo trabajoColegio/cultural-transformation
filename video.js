@@ -17,7 +17,7 @@ export default function activateVideo(video, change, secondVideo, change2, third
     $introduction.classList.add("disappear")
     $introVideo.classList.add("disappear")
     setTimeout(() => {
-      d.querySelector("audio").pause();
+      d.querySelector(".song").pause();
       $introduction.classList.add("none")
       $introVideo.classList.add("none")
       $videoDiv.classList.remove("none")
