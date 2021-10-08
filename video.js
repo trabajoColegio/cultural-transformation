@@ -17,8 +17,8 @@ export default function activateVideo(video, change, secondVideo, change2, third
   $videoBtn.addEventListener("click", e => {
     $introduction.classList.add("disappear")
     $introVideo.classList.add("disappear")
+    $firstSong.pause();
     setTimeout(() => {
-      $firstSong.pause();
       $introduction.classList.add("none")
       $introVideo.classList.add("none")
       $videoDiv.classList.remove("none")
