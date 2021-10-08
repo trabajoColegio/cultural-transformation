@@ -24,6 +24,7 @@ export default function loading(selector, selectorVideo) {
     $introVideo.play();
     setTimeout(() => {
       $loadingScreen.classList.add("none")
+      $song.pause();
       $introduction.classList.remove("disappear")
     }, 500);
   }, 1000);
