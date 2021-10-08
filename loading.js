@@ -9,8 +9,7 @@ export default function loading(selector, selectorVideo) {
   $btn.addEventListener("mouseout", e => {
     $soundImg.classList.remove("activate-sound-div-img-hover")
   })
-  $btn.addEventListener('click', musicPlay);
-function musicPlay() {
+  $btn.addEventListener('click', e => {
     d.querySelector(".song").play();
     d.removeEventListener('click', musicPlay);
 
@@ -28,5 +27,5 @@ function musicPlay() {
       $introduction.classList.remove("disappear")
     }, 500);
   }, 1000);
-}
+  });
 }
